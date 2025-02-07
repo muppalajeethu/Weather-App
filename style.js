@@ -1,5 +1,5 @@
 const apikey = "812a676309ce498a009f77f418746182";
-const apiurl =                                     // muppala jeethu
+const apiurl =                                  
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchInput = document.getElementById("search-input");
