@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">      // muppala jeethu
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body>                    
     <div class="Card">
       <div class="Search">
-        <!-- ✅ Added id="search-input" -->
         <input type="text" id="search-input" placeholder="Enter city name" spellcheck="false" />
-        <!-- ✅ Added id="search-button" -->
         <button id="search-button"><img src="images/search.png" /></button>
       </div>
 
-      <!-- ✅ Changed class="error" to id="error" -->
       <div id="error" style="display: none;">
         <p>Invalid city name</p>
       </div>
 
-      <!-- ✅ Changed class="Weather" to id="Weather" -->
       <div id="Weather" style="display: none;">
-        <!-- ✅ Added id="Weather-icon" -->
         <img src="images/rain.png" id="Weather-icon" />
         <h1 id="temp">22°C</h1>
         <h2 id="city">New York</h2>
@@ -47,7 +42,6 @@
       </div>
     </div>
 
-    <!-- ✅ JavaScript should be loaded at the end of body -->
     <script src="style.js"></script>
   </body>
 </html>
