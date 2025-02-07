@@ -9,23 +9,29 @@
   <body>
     <div class="Card">
       <div class="Search">
-        <input type="text" placeholder="Enter city name" spellcheck="false" />
-        <button><img src="images/search.png" /></button>
-      </div>
-      <div class="error">
-        <p>invalid city name</p>
+        <!-- ✅ Added id="search-input" -->
+        <input type="text" id="search-input" placeholder="Enter city name" spellcheck="false" />
+        <!-- ✅ Added id="search-button" -->
+        <button id="search-button"><img src="images/search.png" /></button>
       </div>
 
-      <div class="Weather">
-        <img src="images/rain.png" class="Weather-icon" />
-        <h1 class="temp">22°C</h1>
-        <h2 class="city">New York</h2>
+      <!-- ✅ Changed class="error" to id="error" -->
+      <div id="error" style="display: none;">
+        <p>Invalid city name</p>
+      </div>
+
+      <!-- ✅ Changed class="Weather" to id="Weather" -->
+      <div id="Weather" style="display: none;">
+        <!-- ✅ Added id="Weather-icon" -->
+        <img src="images/rain.png" id="Weather-icon" />
+        <h1 id="temp">22°C</h1>
+        <h2 id="city">New York</h2>
 
         <div class="details">
           <div class="col">
             <img src="images/humidity.png" />
             <div>
-              <p class="humidity">50%</p>
+              <p id="humidity">50%</p>
               <p>Humidity</p>
             </div>
           </div>
@@ -33,7 +39,7 @@
           <div class="col">
             <img src="images/wind.png" />
             <div>
-              <p class="wind">20 km/h</p>
+              <p id="wind">20 km/h</p>
               <p>Wind Speed</p>
             </div>
           </div>
@@ -41,6 +47,7 @@
       </div>
     </div>
 
+    <!-- ✅ JavaScript should be loaded at the end of body -->
+    <script src="style.js"></script>
   </body>
-  <script src="style.js"></script>
 </html>
