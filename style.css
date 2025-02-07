@@ -1,0 +1,144 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Container */
+.Card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar */
+.Search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.Search input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.Search button {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.Search button img {
+    width: 20px;
+}
+
+.Search button:hover {
+    transform: scale(1.1);
+}
+
+/* Weather Section */
+.Weather {
+    text-align: center;
+}
+
+.Weather-icon {
+    width: 120px;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Weather-icon:hover {
+    transform: scale(1.1);
+}
+
+.Weather h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Weather h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #e3f2fd;
+}
+
+/* Details Section */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.humidity, .wind {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .Card {
+        width: 90%;
+    }
+
+    .Weather h1 {
+        font-size: 40px;
+    }
+
+    .Weather h2 {
+        font-size: 25px;
+    }
+}
+.Weather{
+    display: none;
+
+}
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
