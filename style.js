@@ -1,12 +1,13 @@
-const apikey = "";
-const apiurl = "";
+const apikey = "812a676309ce498a009f77f418746182";
+const apiurl =
+  "https://api.openweathermap.org/data/2.5/weather?appid=units=metric&q=hyderbad";
 
 const SearchBox = document.getElementById("Search input");
 const searchbtn = document.getElementById("search button");
 const weatherIcon = document.getElementById("Weather-icon");
 
 async function CheckWeather(city) {
-  const respone = await fetch(apiurl + city + `&appid=${apikey}`);
+  const respone = await fetch(apiurl + city + &appid=${apikey});
 
   if (respone.status == 404) {
     document.getElementById("error").style.display = "block";
@@ -44,4 +45,4 @@ searchbtn.addEventListener("click", () => {
   CheckWeather(SearchBox.value);
 });
 
-CheckWeather(city);
+CheckWeather(city)
